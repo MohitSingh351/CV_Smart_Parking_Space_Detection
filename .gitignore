@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Model weights (YOLO downloads itself); keep the small trained CNN
+*.pt
+!models/spot_classifier.pt
+
+# Raw dataset (download instructions in README)
+data/pklot_50/
+
+# Watermarked stock image, not ours to publish
+data/samples/car_parking_1.jpg
+spots/car_parking_1.json
+
+# Frames saved for calibration
+*_frame.png
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
